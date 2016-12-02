@@ -19,22 +19,17 @@ function stackLetters (theAlphabetArray) {
       outputs the letters.
      */
 
-     // var i = 0;
-
-     // while (i < theAlphabetArray.length) {
-
-     //    i++
-     // }
-
+    var current_alpha_line = [];
 
 
 
      for (var i = 0; i < theAlphabetArray.length; i++) {
-        console.log(theAlphabetArray[i])
 
-        // for (var x = 0; i < theAlphabetArray.length; x++) {
-        //     console.log(theAlphabetArray[x])
-        // }
+        // adds current letter to the current_alpha_line array
+        current_alpha_line.push(theAlphabetArray[i]);
+
+        // join the current_alpha_line array into a string
+        console.log(current_alpha_line.join(''));
 
      }
 }
