@@ -25,8 +25,17 @@ function stackLetters (theAlphabetArray) {
 
      for (var i = 0; i < theAlphabetArray.length; i++) {
 
+
         // adds current letter to the current_alpha_line array
         current_alpha_line.push(theAlphabetArray[i]);
+
+        /*If the current value of the counter variable can be evenly
+        divided by 3 - using the JavaScript remainder operator - then
+        add a single space to the output. */
+
+        if ((i + 1) % 3 === 0) {
+            current_alpha_line.push(' ');
+        }
 
         // join the current_alpha_line array into a string
         console.log(current_alpha_line.join(''));
